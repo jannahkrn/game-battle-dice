@@ -3,12 +3,10 @@ Welcome to Battle Dice, a thrilling turn-based game where smart tactics, quick d
 
 
 🕹️ What is Battle Dice?
-
 Battle Dice is a light yet addictive turn-based game that challenges players to think strategically each turn while enjoying the chaos. Get ready for dynamic encounters where every strike can reverse the outcome!
 
 
 🌟 Awesome Features
-
 ⚔️ Tactical Turn-Based Combat
 Attack, defend, or prepare a move — every round is a tactical challenge. Think ahead and outmaneuver your enemy, but never forget: the dice decide everything.
 
@@ -29,7 +27,6 @@ Personalize your profile, check your stats, and build your reputation on the bat
 
 
 🎮 Who Should Play?
-
 Fans of light strategy games with a twist of randomness
 
 Players who enjoy titles like Dice Throne, Slay the Spire, or board games
@@ -40,7 +37,6 @@ Anyone who loves a mix of strategy, chaos, and competitive fun!
 
 
 🧪 Built With
-
 Frontend: HTML, CSS, JavaScript
 
 Backend: PHP
