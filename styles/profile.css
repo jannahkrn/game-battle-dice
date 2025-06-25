@@ -1,0 +1,357 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  overflow-x: hidden;
+}
+
+.error-message {
+  color: red;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.menu {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+  z-index: 10;
+}
+
+.menu a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: all 0.7s ease;
+}
+
+.menu a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+h1 {
+  text-shadow: 3px 3px #6d3bb3;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+.bio {
+  margin-top: 10px;
+  font-size: 14px;
+  text-shadow: 1px 1px #000;
+}
+
+button {
+  font-family: 'Press Start 2P';
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 15px;
+  background-color: rgba(138, 43, 226, 0.8);
+  color: white;
+  border: 3px solid white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+#delete {
+  background-color: rgba(167, 0, 33, 0.8);
+  color: white;
+}
+
+.delete-modal-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  font-size: 12px;
+  border: 3px solid white;
+  border-radius: 6px;
+  z-index: 999;
+}
+
+
+
+
+button:hover {
+  background-color: rgba(138, 43, 226, 1);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+}
+
+.tl a {
+  color: #00ffff;
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+
+.tl a:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+  transform: scale(1.1);
+}
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #1a0033;
+  color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 2px solid #fff;
+  width: 300px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.avatar {
+  image-rendering: pixelated;
+}
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #222;
+  margin: 10% auto;
+  padding: 20px 30px;
+  border: 2px solid #888;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="password"],
+.modal-content input[type="hidden"] {
+  width: 300px;
+  padding: 10px 10px;
+  font-size: 17px;
+  font-family: 'Press Start 2P', cursive;
+  border: 3px solid #fff;
+  background: rgba(144, 99, 205, 0.8);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="email"]:focus,
+.modal-content input[type="password"]:focus {
+  background: rgba(144, 99, 205, 1);
+  border-color: #00ffff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  transform: scale(1.02);
+}
+
+.modal-content input[type="text"]::placeholder,
+.modal-content input[type="email"]::placeholder,
+.modal-content input[type="password"]::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.close,
+.close-avatar {
+  color: #aaa;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close-avatar:hover {
+  color: white;
+}
+
+#avatarPreview {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+
+#openAvatarPopup {
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #444;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  transition: 0.3s;
+  margin-bottom: 16px;
+}
+
+
+#openAvatarPopup:hover {
+  background-color: #666;
+}
+
+
+.avatar-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.avatar-option {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: border 0.2s ease-in-out;
+}
+
+.avatar-option:hover {
+  border-color: yellow;
+}
+
+
+
+.avatar-option {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: border 0.2s ease-in-out;
+}
+
+.avatar-option:hover {
+  border-color: yellow;
+  transform: scale(1.1);
+}
+
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-content {
+  animation: fadeInScale 0.3s ease forwards;
+}
+
+.delete {
+  background-color: darkred;
+}

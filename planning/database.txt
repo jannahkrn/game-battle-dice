@@ -1,0 +1,15 @@
+create database battledice
+
+create table users (
+  id int auto_increment primary key,
+  username varchar(50) unique not null,
+  password varchar(255) not null,
+  email varchar(100) not null,
+  created_at date not null default current_date
+)
+
+-- User account example
+--   username: Noah
+--   password: test
+insert into users(username, password, email)
+values ('Noah', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'noah@email.co.nz')

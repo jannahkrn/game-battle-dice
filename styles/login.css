@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+h1 {
+  text-shadow: 3px 3px #6d3bb3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 5px;
+}
+
+label {
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: left; 
+  width: 100%; 
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px 10px;
+  font-size: 17px;
+  font-family: 'Press Start 2P', cursive;
+  border: 3px solid #fff;
+  background: rgba(144, 99, 205, 0.8);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+input[type="password"] {
+  width: 250px; 
+  padding: 10px 10px;
+  font-size: 17px;
+  font-family: 'Press Start 2P', cursive;
+  border: 3px solid #fff;
+  background: rgba(144, 99, 205, 0.8);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background: rgba(144, 99, 205, 1);
+  border-color: #00ffff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  transform: scale(1.02);
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+button[type="button"] {
+  font-family: 'Press Start 2P';
+  padding: 10px 12px;
+  font-size: 12px;
+  background-color: rgba(138, 43, 226, 0.8);
+  color: white;
+  border: 3px solid white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  height: fit-content;
+}
+
+button[type="button"]:hover {
+  background-color: rgba(138, 43, 226, 1);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+}
+
+button[type="submit"] {
+  font-family: 'Press Start 2P';
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 15px;
+  background-color: rgba(138, 43, 226, 0.8);
+  color: white;
+  border: 3px solid white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  position: relative;
+  align-self: flex-start; 
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgba(138, 43, 226, 1);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+}
+
+.error-message {
+  color: red;
+  text-align: left; 
+  width: 100%;
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+.register {
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.5s ease, text-shadow 0.5s ease;
+  margin-bottom: 0px;
+  text-align: left; 
+  width: 100%;
+  color: white;
+  font-size: 20px;
+}
+
+.register:hover {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.video-background {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}

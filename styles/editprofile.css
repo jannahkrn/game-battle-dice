@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../images/bgap.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.menu {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.menu a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: all 0.7s ease;
+}
+
+.menu a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+h1 {
+  text-shadow: 3px 3px #6d3bb3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 250px;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid #000;
+  background: #9063cd;
+  color: white;
+  text-shadow: 2px 2px #000;
+  margin-top: 5px;
+}
+
+input[type="file"] {
+  width: 250px;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid #000;
+  background: #9063cd;
+  color: white;
+  text-shadow: 2px 2px #000;
+  margin-top: 5px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  font-family: 'Press Start 2P';
+  font-size: 14px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 2px solid #000;
+  background: #9063cd;
+  color: white;
+  cursor: pointer;
+  text-shadow: 2px 2px #000;
+}
+
+button:hover {
+  background: #6d3bb3;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+

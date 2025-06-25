@@ -1,0 +1,8 @@
++ keyboard event listener
++ register dengan pilih player character (sudah tersedia opsi)
++ tampilkan player character pada home.php
++ game logic
++ sound effect
++ random welcome messages
++ hapus account
++ responsive design
